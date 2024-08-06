@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie mania</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Listing</h1>
+        <input type="text" id="searchBar" placeholder="Search for a movie...">
+        <div id="movieList" class="movie-list"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalPoster" class="modal-img" src="" alt="">
+            <p id="modalDescription"></p>
+            <div style="max-height: 35px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;"><button type="button">Watch Trailer</button>
+                <p style="color:white;"><strong>Rating : </strong> 8.9</p>
+            <button type="button">Save For Later</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

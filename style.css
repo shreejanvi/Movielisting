@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background: #121212;
+}
+.container h1{
+    color: #a688fa;
+}
+.container {
+    max-width: 1280px;
+    width: 100%;
+}
+.card-img{
+object-fit: cover;
+width: 100%;
+max-height: auto;
+}
+#searchBar {
+    width: 85%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #282828;
+    color: white;
+}
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.movie-card h3{
+    color: white;
+}
+.movie-card {
+    background: #282828;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+#modalTitle{
+    text-align: center;
+    color: #a688fa;
+}
+#modalDescription{
+    color: white;
+}
+.modal-content button:hover{
+    background: #5a23f3;
+    color: #a688fa;   
+}
+.modal-content button{
+    padding: 10px;
+    background: #a688fa;
+    color: #5a23f3;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+}
+.modal-content {
+    background: #2f2b3a;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 10px;
+}
+.modal-img{
+    width: 60%;
+    object-fit: cover;
+    margin: 0 20%;
+}
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card-desc{
+    font-size: 16px;
+    font-family: serif;
+    color:rgb(139, 139, 139);
+}
+@media only screen and (min-width: 600px) {
+    #searchBar {
+        width: 95%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .card-img{
+        min-height:320px ;
+    }
+  }
+  
